@@ -59,6 +59,16 @@ body{
     background-image: url(../images/jail.jpg);
 }
 
+.jailed{
+    background-image:url(../images/frown-face.png);
+    background-size:contain;
+    background-position:center;
+}
+.landedOnOwnProperty{
+    background-image:url(../images/smiley-face.png);
+    background-size:contain;
+    background-position:center;
+}
 
 .board .game.cell.free-parking{
     background-image: url(../images/parking.png);
@@ -201,8 +211,6 @@ body{
 
 .player.current-turn{
     background-image:url(../images/crown.png);
-    background-size:contain;
-    background-position:center;
 }
 
 .board .dice.cell{
@@ -214,8 +222,8 @@ body{
     width: 25%;
     height: 25%;
     margin: 4%;
-    background-color: black;
-    border-radius: 100px;
+    background-color: #364c9c;
+    border-radius: 100px; /*Draws the black circles on the die */
     opacity:0;
 }
 
