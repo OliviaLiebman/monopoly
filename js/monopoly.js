@@ -1,8 +1,9 @@
 var Monopoly = {}; //Monopoly namespace
 Monopoly.allowRoll = true;
-Monopoly.moneyAtStart = 10; //start with 500 units of money
+Monopoly.moneyAtStart = 250; //start with 250 units of money
 Monopoly.doubleCounter = 0;
 Monopoly.passedGoBool = false;
+Monopoly.ifBroke = false;
 
 Monopoly.init = function(){
     $(document).ready(function(){
@@ -44,7 +45,7 @@ Monopoly.getPlayersMoney = function(player){
 };
 
 Monopoly.updatePlayersMoney = function(player,amount){
-    if (Monopoly.passedGoBool === true) {
+    if (Monopoly.passedGoBool === true) { //when user passes go, the user gets 10 units of money
         var playersMoney = parseInt(player.attr("data-money"));
         playersMoney += amount;
         Monopoly.passedGoBool = false;
@@ -52,8 +53,10 @@ Monopoly.updatePlayersMoney = function(player,amount){
     else {
         var playersMoney = parseInt(player.attr("data-money"));
         playersMoney -= amount;
-        if (playersMoney < 0) {
+
+        if (playersMoney <= 0) {
             Monopoly.showPopup("broke");
+            Monopoly.ifBroke = true;
         }
     }
     player.attr("data-money",playersMoney);
@@ -115,6 +118,8 @@ Monopoly.handleTurn = function(){
 
 Monopoly.setNextPlayerTurn = function(){
     var currentPlayerTurn = Monopoly.getCurrentPlayer();
+    var currentPlayersMoney = Monopoly.getPlayersMoney(currentPlayerTurn);
+
     var playerId = parseInt(currentPlayerTurn.attr("id").replace("player",""));
     if (Monopoly.doubleCounter === 0) {//if the dice has not rolled double, make nextPlayerId the next player:
         var nextPlayerId = playerId + 1;//next player's id: current playerID plus 1
@@ -139,6 +144,11 @@ Monopoly.setNextPlayerTurn = function(){
         }
         Monopoly.setNextPlayerTurn();
         return;
+    }
+    if (Monopoly.ifBroke === true) {
+        currentPlayerTurn.removeAttr("data-money");
+        currentPlayerTurn.removeClass("player");
+        currentPlayerTurn.removeAttr("title", currentPlayerTurn.attr('id') + ":$" + currentPlayersMoney);
     }
     Monopoly.closePopup();
     Monopoly.doubleCounter = 0;
@@ -255,6 +265,10 @@ Monopoly.calculateProperyRent = function(propertyCost){
 Monopoly.closeAndNextTurn = function(){
     Monopoly.setNextPlayerTurn();
     Monopoly.closePopup();
+
+    if (Monopoly.ifBroke === true ) {
+
+    }
 };
 
 Monopoly.initPopups = function(){
@@ -273,7 +287,12 @@ Monopoly.handleBuy = function(player,propertyCell,propertyCost){
     if (playersMoney < propertyCost){
         Monopoly.showErrorMsg();
         Monopoly.playSound("nomoneybeep");
-    }else{
+    }
+    else if (Monopoly.ifBroke === true) {
+        propertyCell.addClass("available").removeClass(player.attr("id")).attr("data-owner", "").attr("data-rent", "");//when player is broke, change these props as shown
+
+    }
+    else{
         Monopoly.updatePlayersMoney(player,propertyCost);
         var rent = Monopoly.calculateProperyRent(propertyCost);
 
@@ -332,8 +351,8 @@ Monopoly.getNextCell = function(cell){
 
 Monopoly.handlePassedGo = function(){
     Monopoly.passedGoBool = true;
-    var player = Monopoly.getCurrentPlayer();
-    Monopoly.updatePlayersMoney(player, 20);
+    var player = Monopoly.getCurrentPlayer(); //get 10 units of money when passed go
+    Monopoly.updatePlayersMoney(player, 10);
 };
 
 

@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f6b4aff6-f637-4618-9abf-280664a640fc" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/monopoly.css" afterPath="$PROJECT_DIR$/css/monopoly.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/monopoly.js" afterPath="$PROJECT_DIR$/js/monopoly.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -26,8 +23,8 @@
       <file leaf-file-name="monopoly.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/monopoly.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="329">
-              <caret line="50" column="5" lean-forward="true" selection-start-line="50" selection-start-column="5" selection-end-line="50" selection-end-column="5" />
+            <state relative-caret-position="2464">
+              <caret line="154" column="30" lean-forward="true" selection-start-line="154" selection-start-column="30" selection-end-line="154" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -36,7 +33,7 @@
       <file leaf-file-name="monopoly.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/monopoly.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
+            <state relative-caret-position="-1408">
               <caret line="93" column="41" lean-forward="false" selection-start-line="93" selection-start-column="41" selection-end-line="93" selection-end-column="41" />
               <folding />
             </state>
@@ -56,7 +53,7 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
+            <state relative-caret-position="-2224">
               <caret line="14" column="95" lean-forward="false" selection-start-line="14" selection-start-column="92" selection-end-line="14" selection-end-column="95" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#121;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -65,6 +62,16 @@
                 <element signature="n#style#0;n#div#5;n#div#0;n#div#121;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#6;n#div#0;n#div#121;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="githubAssignment.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../ITCCodingBootcamp/Reactworkshop/githubprofiles/client/githubAssignment.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="233">
+              <caret line="104" column="57" lean-forward="false" selection-start-line="104" selection-start-column="57" selection-end-line="104" selection-end-column="57" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -80,36 +87,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>pl</find>
-      <find>closest</find>
-      <find>playerCel</find>
-      <find>getPl</find>
-      <find>handleTu</find>
-      <find>handleac</find>
-      <find>movepl</find>
-      <find>popupid</find>
-      <find>closepop</find>
-      <find>popup</find>
-      <find>getpop</find>
-      <find>showpop</find>
-      <find>intro</find>
-      <find>bro</find>
-      <find>inval</find>
       <find>shower</find>
       <find>settim</find>
-      <find>broke</find>
       <find>double</find>
-      <find>go</find>
       <find>updatepla</find>
       <find>upd</find>
       <find>yay</find>
       <find>console.log</find>
       <find>money</find>
-      <find>consol</find>
-      <find>console</find>
-      <find>con</find>
       <find>handlepass</find>
+      <find>setstate</find>
+      <find>console</find>
+      <find>loaduser</find>
+      <find>userna</find>
+      <find>closeand</find>
+      <find>userdat</find>
+      <find>repos</find>
+      <find>userinf</find>
+      <find>setnext</find>
       <find>updatepl</find>
+      <find>getcurr</find>
+      <find>cell</find>
+      <find>propertycel</find>
+      <find>class</find>
+      <find>broke</find>
+      <find>go</find>
+      <find>handlebu</find>
+      <find>consol</find>
+      <find>setnex</find>
+      <find>currentjail</find>
+      <find>con</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -124,6 +131,7 @@
         <option value="$PROJECT_DIR$/../../ITC_assignments/frontend8.4.html" />
         <option value="$PROJECT_DIR$/css/monopoly.css" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/../ITCCodingBootcamp/Reactworkshop/githubprofiles/client/githubAssignment.html" />
         <option value="$PROJECT_DIR$/js/monopoly.js" />
       </list>
     </option>
@@ -273,12 +281,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1483963661065</updated>
-      <workItem from="1483963662597" duration="34382000" />
+      <workItem from="1483963662597" duration="50007000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34382000" />
+    <option name="totallyTimeSpent" value="50007000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -291,7 +299,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.02536998" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286517" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -354,6 +362,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../ITCCodingBootcamp/Reactworkshop/githubprofiles/client/githubAssignment.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="104" column="57" lean-forward="false" selection-start-line="104" selection-start-column="57" selection-end-line="104" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/css/common.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="16">
@@ -364,7 +380,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/monopoly.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
+        <state relative-caret-position="-1408">
           <caret line="93" column="41" lean-forward="false" selection-start-line="93" selection-start-column="41" selection-end-line="93" selection-end-column="41" />
           <folding />
         </state>
@@ -372,7 +388,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
+        <state relative-caret-position="-2224">
           <caret line="14" column="95" lean-forward="false" selection-start-line="14" selection-start-column="92" selection-end-line="14" selection-end-column="95" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#div#121;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -386,8 +402,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/monopoly.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="329">
-          <caret line="50" column="5" lean-forward="true" selection-start-line="50" selection-start-column="5" selection-end-line="50" selection-end-column="5" />
+        <state relative-caret-position="2464">
+          <caret line="154" column="30" lean-forward="true" selection-start-line="154" selection-start-column="30" selection-end-line="154" selection-end-column="30" />
           <folding />
         </state>
       </provider>
